@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <section class="expenses">
+        <div class="container">
+            <h1 class="expenses__title">Учет расходов</h1>
+            <div class="expenses__wrapper">
+                <input id="expenses-input" class="expenses__input" type="number">
+                <button id="expenses-btn" class="expenses__btn">Добавить</button>
+            </div>
+            <div class="expenses__wrapper-bottom">
+                <div class="expenses__left">
+                    <p>Лимит: <span id="expenses-limit"></span>руб.</p>
+                    <p>Всего: <span id="expenses-sum"></span>руб.</p>
+                    <p>Статус: <span id="expenses-status" class="expenses_status"></span>
+                    </p>
+                </div>
+                <div class="expenses__right">
+                    <h2 class="expenses__history-title">История:</h2>
+                    <div id="expenses-history"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
