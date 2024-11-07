@@ -18,19 +18,30 @@
         <div class="container">
             <h1 class="expenses__title">Учет расходов</h1>
             <div class="expenses__wrapper">
-                <input id="expenses-input" class="expenses__input" type="number">
-                <button id="expenses-btn" class="expenses__btn">Добавить</button>
-            </div>
-            <div class="expenses__wrapper-bottom">
                 <div class="expenses__left">
-                    <p>Лимит: <span id="expenses-limit"></span>руб.</p>
-                    <p>Всего: <span id="expenses-sum"></span>руб.</p>
-                    <p>Статус: <span id="expenses-status" class="expenses_status"></span>
+                    <input id="expensesInput" class="expenses__input" type="number">
+                    <select id="categorySelect" class="expenses__category-select">
+                        <option hidden disabled selected value="категории">категории</option>
+                        <option value="продукты">продукты</option>
+                        <option value="кафе">кафе и рестораны</option>
+                        <option value="квартира">квартира</option>
+                        <option value="авто">авто</option>
+                    </select>
+                    <div class="limit-wrapper">
+                        <p>Лимит:
+                            <span id="limitValue">10000 </span>руб.
+                        </p>
+                        <img src="image 1.png" alt="" id="limitButton">
+                    </div>
+                    <p>Всего: <span id="totalValue">0 </span>руб.</p>
+                    <p>Статус: <span id="statusText" class="expenses_status"></span>
                     </p>
+                    <button class="expenses__btn-reset" id="clearButton">Сбросить расходы</button>
                 </div>
                 <div class="expenses__right">
+                    <button id="addButton" class="expenses__btn">Добавить</button>
                     <h2 class="expenses__history-title">История:</h2>
-                    <div id="expenses-history"></div>
+                    <ol id="historyList"></ol>
                 </div>
             </div>
         </div>

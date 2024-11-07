@@ -20,6 +20,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+.expenses__title {
+  margin-bottom: 30px;
+}
 .expenses_status {
   color: rgb(0, 210, 0);
 }
@@ -27,9 +30,7 @@ body {
   color: red;
 }
 .expenses__wrapper {
-  margin: 42px 0;
   display: flex;
-  align-items: center;
 }
 .expenses__input {
   width: 484px;
@@ -44,6 +45,7 @@ body {
   background-color: #0094FF;
   color: white;
   border: none;
+  border-radius: 10px;
   font-size: 32px;
   font-weight: 400;
 }
@@ -51,12 +53,46 @@ body {
   background-color: #0870C5;
 }
 .expenses__history-title {
+  margin-top: 25px;
   font-size: 32px;
+  text-align: center;
 }
 .expenses__wrapper-bottom {
   display: flex;
   justify-content: space-between;
 }
-.expenses__right {
-  margin-right: 220px;
+.expenses__btn-reset {
+  max-width: 484px;
+  height: 58px;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #F00;
+  margin-top: 69px;
+  padding: 11px 80px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+}
+.expenses__category-select {
+  width: 484px;
+  height: 58px;
+  margin-right: 28px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 400;
+}
+.expenses_status-green {
+  color: green;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+.limit-wrapper {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
